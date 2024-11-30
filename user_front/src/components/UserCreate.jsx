@@ -14,20 +14,20 @@ function CreateUser() {
       lastName,
       email
     };
-  }
-  //   axios.post('http://localhost:8080/api/users', newUser)
-  //     .then(response => {
-  //       alert('User created successfully!');
-  //       // Reset form
-  //       setFirstName('');
-  //       setLastName('');
-  //       setEmail('');
-  //     })
-  //     .catch(error => {
-  //       console.error('Error creating user:', error);
-  //       alert('Error creating user');
-  //     });
-  // };
+
+    axios.post('http://localhost:8080/api/users', newUser)
+      .then(response => {
+        alert('User created successfully!');
+        // Reset form
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+      })
+      .catch(error => {
+        console.error('Error creating user:', error);
+        alert('Error creating user');
+      });
+  };
 
   return (
     <div>
