@@ -1,5 +1,3 @@
-# User Management Mini_Project
-
 # Full Stack User Management Application
 
 ## Technologies
